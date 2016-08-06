@@ -31,3 +31,6 @@ cd vim-setup
 14. sudo apt-get install mate-desktop-environment-core
 sudo apt-get install lightdm lightdm-gtk-greeter
 sudo echo `which lightdm` > /etc/X11/default-desktop-manager
+15. sudo apt-get install chromium-browser
+16. sudo apt-get install mate-themes
+Select BlackMate theme
