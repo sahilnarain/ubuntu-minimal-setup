@@ -34,3 +34,12 @@ sudo echo `which lightdm` > /etc/X11/default-desktop-manager
 15. sudo apt-get install chromium-browser
 16. sudo apt-get install mate-themes
 Select BlackMate theme
+17. sudo apt-get install fbterm
+Then edit the .bash_profile to have the below lines
+virtual_terminal="$( tty | grep -oE ....$  )"
+case "$virtual_terminal" in
+  tty1|tty2|tty3|tty4|tty5|tty6)
+      exec fbterm -- bash -c 'TERM=fbterm screen'
+        ;;
+esac
+18. Configure window buttons to appear on the left side of the title bar
