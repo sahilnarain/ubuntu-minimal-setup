@@ -28,18 +28,10 @@ npm install -g npm
 12. git clone https://sahilnarain@github.com/sahilnarain/vim-setup
 cd vim-setup
 ./setup.sh
-14. sudo apt-get install mate-desktop-environment-core
-sudo apt-get install lightdm lightdm-gtk-greeter
-sudo echo `which lightdm` > /etc/X11/default-desktop-manager
-15. sudo apt-get install chromium-browser
-16. sudo apt-get install mate-themes
-Select BlackMate theme
-17. sudo apt-get install fbterm
-Then edit the .bash_profile to have the below lines
-virtual_terminal="$( tty | grep -oE ....$  )"
-case "$virtual_terminal" in
-  tty1|tty2|tty3|tty4|tty5|tty6)
-      exec fbterm -- bash -c 'TERM=fbterm screen'
-        ;;
-esac
-18. Configure window buttons to appear on the left side of the title bar
+14. Install gnome desktop
+sudo apt-get install gdm ubuntu-gnome-desktop --no-install-recommends
+15. Install communication clients - Thunderbird (Email), Pidgin (IRC) and LiFeRea (RSS)
+sudo apt-get install thunderbird pidgin liferea
+16. Enable desktop shortcuts via dconf-editor
+org > gnome > desktop > background --> Enable desktop icons
+<Optional> - Make <application>.desktop and write the config. Mark the shortcut as executable
