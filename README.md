@@ -35,3 +35,4 @@ sudo apt-get install thunderbird pidgin liferea
 16. Enable desktop shortcuts via dconf-editor
 org > gnome > desktop > background --> Enable desktop icons
 <Optional> - Make <application>.desktop and write the config. Mark the shortcut as executable
+17. Launch the tweak tool and enable minimize and maximize window buttons.
