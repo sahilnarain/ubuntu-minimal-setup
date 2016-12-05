@@ -36,3 +36,6 @@ sudo apt-get install thunderbird pidgin liferea
 org > gnome > desktop > background --> Enable desktop icons
 <Optional> - Make <application>.desktop and write the config. Mark the shortcut as executable
 17. Launch the tweak tool and enable minimize and maximize window buttons.
+18. Install maximus - it gets rid of weird titlebars. 
+sudo apt-get install maximus
+Log out log in again.
